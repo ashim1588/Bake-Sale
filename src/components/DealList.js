@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 
 class DealList extends Component {
@@ -9,7 +9,10 @@ class DealList extends Component {
   render() {
     return (
       <View style={styles.list}>
-        <Text>Deals.... </Text>
+        <FlatList
+        data={this.props.deals}
+        renderItem={({item}) => <Text>{item.title}</Text>}
+        />
       </View>
     )
   }
@@ -21,7 +24,6 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         paddingTop: 50,
-        
     },
 })
 
