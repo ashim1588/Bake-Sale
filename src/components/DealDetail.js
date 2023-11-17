@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Image, StyleSheet, Text, TouchableOpacity, PanResponder, Animated, View, Dimensions, Button, Linking } from 'react-native';
+import { Image, StyleSheet, Text, TouchableOpacity, PanResponder, Animated, View, Dimensions, Button, Linking, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 import { priceDisplay } from '../util';
 import ajax from '../ajax';
@@ -75,10 +75,10 @@ class DealDetail extends Component {
             style={[{left: this.imageXPos}, styles.image]} 
             source={{uri: deal.media[this.state.imageIndex]}} 
             />
-            <View style={styles.detail}>
             <View>
             <Text style={styles.title}>{deal.title}</Text>
             </View>
+            <ScrollView style={styles.detail}>
             <View style={styles.footer}>
                 <View style={styles.info}>
                 <Text style={styles.price}>{(priceDisplay(deal.price))}</Text>
@@ -95,7 +95,7 @@ class DealDetail extends Component {
             <Text>{deal.description}</Text>
         </View>
         <Button title='Buy this deal!' onPress={this.openDealUrl}/>
-        </View>
+        </ScrollView>
         </View>
     )
   }
@@ -103,7 +103,8 @@ class DealDetail extends Component {
 
 const styles = StyleSheet.create({
     deal: {
-        marginTop: 10
+        marginTop: 10,
+        marginBottom: 20
     },
     backLink: {
         marginBottom: 5,
@@ -153,6 +154,9 @@ const styles = StyleSheet.create({
         borderColor: '#bbb',
         borderWidth: 1,
         margin: 15,
+    },
+    detail: {
+        
     }
 })
 
