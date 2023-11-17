@@ -10,6 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
+    "lodash.debounce": "^4.0.8",
     "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-native": "0.72.6"
