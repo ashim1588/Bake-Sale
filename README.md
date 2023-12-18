@@ -1,3 +1,11 @@
+![Simulator Screenshot - iPhone 15 Pro - 2023-11-17 at 16 13 42](https://github.com/ashim1588/Bake-Sale/assets/87517867/749d95c1-a13a-44e2-aa40-268631752dfd)
+![Simulator Screenshot - iPhone 15 Pro - 2023-11-17 at 16 13 56](https://github.com/ashim1588/Bake-Sale/assets/87517867/4896a02a-3b19-4946-9f3a-67167c36e3cd)
+![Simulator Screenshot - iPhone 15 Pro - 2023-11-17 at 16 14 03](https://github.com/ashim1588/Bake-Sale/assets/87517867/8655a97c-62d5-4ec1-8ce0-dd486cb4b5a8)
+![Simulator Screenshot - iPhone 15 Pro - 2023-11-17 at 16 14 22](https://github.com/ashim1588/Bake-Sale/assets/87517867/2f926d98-862c-4c37-8c17-0863e165eae4)
+
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
